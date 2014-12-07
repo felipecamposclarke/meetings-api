@@ -2,7 +2,7 @@ FactoryGirl.define do
   factory :meeting do
     title "MyString"
     description "MyString"
-    address "MyString"
+    author "MyString"
     date Faker::Date.forward(2)
   end
 
