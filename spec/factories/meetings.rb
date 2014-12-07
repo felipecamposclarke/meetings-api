@@ -1,9 +1,13 @@
 FactoryGirl.define do
   factory :meeting do
     title "MyString"
-title ""
-author "MyString"
-date "2014-12-07 16:36:55"
+    description "MyString"
+    address "MyString"
+    date Faker::Date.forward(2)
   end
 
+  factory :invalid_meeting, parent: :meeting do
+    title nil
+    date nil
+  end
 end
